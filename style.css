@@ -1,0 +1,48 @@
+body {
+    text-align: center; /* Centers all content on the page */
+    border-color: rgb(0, 0, 0);
+}
+
+/* Styles the main heading */
+#firstp {
+    word-spacing: 10px;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 80px;
+}
+
+/* Styles the reason text that changes */
+#reasontext {
+    font-size: 50px;
+}
+
+/* Styles the image element */
+#album {
+    border-style: solid;
+    border-color: #000000; /* A shade of green */
+    border-width: 5px;   
+    border-radius: 0px; /* Makes the corners rounded */
+    padding: 5px;
+    /* Set a fixed display size while preserving the image's aspect ratio */
+    width: 75px; /* change this to whichever fixed width you want */
+    height: 200px; /* taller fixed height requested */
+    object-fit: contain; /* show whole image, no cropping */
+}
+
+/* Step3 -- vvwrite your code here from reference documents */
+
+/* Utility: make all images a fixed size and centered while preserving aspect ratio */
+img.fixed-size {
+    width: 250px; /* fixed display width */
+    height: 500px; /* fixed display height */
+    object-fit: contain; /* 'contain' keeps the whole image visible, 'cover' may crop */
+    display: inline-block;
+}
+
+/* Optional: prevent images from being larger than their intrinsic size */
+img.fixed-max {
+    max-width: 300px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+}
